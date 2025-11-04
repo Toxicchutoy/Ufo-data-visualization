@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  padding: 20px 10px;
+
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+/* control panel */
+
+#controls {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+button {
+  background: none;
+  color: white;
+  border: 1px solid #0ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #0ff;
+  color: black;
+}
+
+/* input button style  */
+#reveal-input {
+  background: none;
+  color: white;
+  border: 1px solid #0ff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* input hover  */
+#reveal-input:hover,
+#reveal-input:focus {
+  background: #0ff;
+  color: black;
+  border-color: #0ff;
+}
+
+/* title */
+#title {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+  pointer-events: none;
+}
